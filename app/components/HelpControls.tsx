@@ -4,7 +4,7 @@ import { HelpPageType } from "../lib/types";
 
 const HelpControls = ({ page }: { page: HelpPageType }) => {
   return (
-    <div className="flex flex-col justify-between h-full min-w-[500px]">
+    <div className="flex flex-col justify-between h-full min-w-[300px] max-w-[500px] w-full">
       <div className="flex flex-col gap-4 mt-10">
         <h1 className="text-4xl font-bold">Здесь есть помощь.</h1>
         <div className="flex flex-col gap-2">

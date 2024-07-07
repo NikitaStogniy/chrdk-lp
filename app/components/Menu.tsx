@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useClickAway } from "react-use";
 import { Squash as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
-import { routes } from "../routes"; // Ensure you have a routes file
+import { routes } from "../lib/routes"; // Ensure you have a routes file
 import Link from "next/link";
 
 const Menu = () => {
