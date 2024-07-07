@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Metadata } from "next";
 import Menu from "../../components/Menu";
 import HelpControls from "../../components/HelpControls";
@@ -6,8 +5,8 @@ import HelpContent from "../../components/HelpContent";
 import { HelpPageType } from "../../lib/types";
 
 export const metadata: Metadata = {
-  title: "...",
-  description: "...",
+  title: "Чердак в кармане",
+  description: "Найти любой шмурдяк",
 };
 
 const HelpPage = async ({ params }: { params: { page: HelpPageType } }) => {

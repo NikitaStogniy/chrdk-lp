@@ -10,16 +10,19 @@ const Features = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-4 w-full">
           <FeatureBlock
+            image=""
             heading="Где хотите"
             description="Чердак позволяет управлять
             сразу пятью объектами
             с одного телефона"
           />
           <FeatureBlock
+            image=""
             heading="Что хотите"
             description="Можно добавить название, фото и описание предмета, а потом легко его найти"
           />
           <FeatureBlock
+            image=""
             heading="Поделитесь с близкими"
             description="Добавьте участника в ваш 
             объект для совместного пользования"

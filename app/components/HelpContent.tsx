@@ -1,5 +1,4 @@
 import { HelpPageType } from "../lib/types";
-import { motion } from "framer-motion";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
 
