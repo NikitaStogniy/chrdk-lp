@@ -1,6 +1,8 @@
 import { HelpPageType } from "../lib/types";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
+import { PolicyHTML } from "./policy";
+import { TermsHTML } from "./terms";
 
 const HelpContent = ({ page }: { page: HelpPageType }) => {
   return (
@@ -32,119 +34,31 @@ const FaqContent = () => {
     </>
   );
 };
-
 const Faq = [
   {
-    title: "Test",
-    content: "Test",
+    title: "Как установить приложение?",
+    content:
+      "Чтобы установить наше приложение для складского учета, перейдите в Google Play или App Store, найдите наше приложение по названию, и нажмите кнопку 'Установить'. Следуйте инструкциям на экране для завершения установки.",
   },
   {
-    title: "Test",
-    content: "Test",
+    title: "Как зарегистрироваться в приложении?",
+    content:
+      "На главном экране приложения нажмите кнопку 'Регистрация'. Введите необходимые данные, такие как имя, адрес электронной почты и пароль. Подтвердите свою регистрацию через одноразовый код в электронном письме.",
   },
   {
-    title: "Test",
-    content: "Test",
+    title: "Как добавить новый товар в систему?",
+    content:
+      "Зайдите в раздел 'Товары' и нажмите на кнопку 'Добавить товар'. Заполните все необходимые поля, такие как название товара, местоположение и фотография. Нажмите 'Сохранить'.",
   },
   {
-    title: "Test",
-    content: "Test",
+    title: "Как восстановить доступ к учетной записи?",
+    content:
+      "На странице входа нажмите 'Забыли пароль?'. Введите адрес электронной почты, связанный с вашей учетной записью, и следуйте инструкциям для восстановления доступа.",
   },
   {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
-  },
-  {
-    title: "Test",
-    content: "Test",
+    title: "Как связаться с технической поддержкой?",
+    content:
+      "В разделе 'Поддержка' найдите контактные данные для связи с технической поддержкой. Вы можете воспользоваться электронной почтой, чатом или телефоном для получения помощи.",
   },
 ];
 
@@ -184,7 +98,11 @@ const PolicyContent = ({ isPolicy }: { isPolicy: boolean }) => {
       </div>
 
       <div className="flex flex-col gap-4 pt-4 overflow-y-scroll overflow-x-hidden relative h-full ">
-        {isPolicy ? "Политика" : "Правила"}
+        <div
+          dangerouslySetInnerHTML={{
+            __html: isPolicy ? PolicyHTML : TermsHTML,
+          }}
+        />
       </div>
     </div>
   );

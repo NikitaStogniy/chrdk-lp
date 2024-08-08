@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  pageExtensions: ["js", "jsx", "html", "ts", "tsx"],
   async redirects() {
     return [
       {

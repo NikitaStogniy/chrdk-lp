@@ -26,9 +26,13 @@ const Menu = () => {
             chrk.
           </Link>
           <div className="flex flex-row gap-4">
-            <Link href={"/#download"}>Скачать</Link>
-            <Link href={"/help"}>Помощь</Link>
-            <Link href={"/help#privacy"}>Конфиденциальность</Link>
+            {routes.slice(1).map((route, idx) => {
+              return (
+                <Link key={route.href} href={route.href}>
+                  {route.title}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

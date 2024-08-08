@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Heading = () => {
   return (
     <div className="md:h-screen flex justify-between flex-col lg:flex-row items-start lg:items-center max-w-[1450px] mx-auto p-8 gap-4">
@@ -11,7 +13,14 @@ const Heading = () => {
           Забудьте о вещах, добавив их <br />в Чердак (а он вам напомнит)
         </p>
       </div>
-      <div className="w-full md:w-[600px] h-[600px] bg-gray-200 rounded-xl"></div>
+      <div className="w-full relative md:w-[600px] h-[600px] bg-gray-200 rounded-xl">
+        <Image
+          src="/first.png"
+          alt="about"
+          fill
+          className="object-contain rounded-xl"
+        />
+      </div>
     </div>
   );
 };
