@@ -93,7 +93,7 @@ const ContactContent = () => {
       <div className="text-center">
         <h1 className="text-2xl font-medium mb-4">Contact us</h1>
         <p className="text-gray-600">
-          Have questions, suggestions or found a bug? We're always happy to
+          Have questions, suggestions or found a bug? We&apos;re always happy to
           help!
         </p>
       </div>
