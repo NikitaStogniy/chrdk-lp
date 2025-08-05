@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cherdak.app/sitemap.xml
+
+# Common crawl optimization
+Crawl-delay: 1
+
+# Disallow admin/private areas (if any in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow specific pages
+Allow: /help/
+Allow: /help/faq
+Allow: /help/contacts
+Allow: /help/policy
+Allow: /help/terms

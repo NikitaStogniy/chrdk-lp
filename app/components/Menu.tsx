@@ -21,7 +21,7 @@ const Menu = () => {
   return (
     <>
       <div className="justify-start flex-row items-start max-w-[1450px] mx-auto relative">
-        <div className="hidden lg:flex justify-start flex-row items-start max-w-[1450px] mx-auto p-4 md:p-8 gap-8 absolute">
+        <div className="hidden lg:flex justify-start flex-row items-start max-w-[1450px] mx-auto p-4 md:p-8 gap-8 absolute z-50 top-0 left-0 right-0">
           <Link href={"/"} className="font-bold">
             chrk.
           </Link>
@@ -36,7 +36,7 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      <div ref={ref} className="lg:hidden">
+      <div ref={ref} className="lg:hidden fixed top-4 right-4 z-50">
         <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
         <AnimatePresence>
           {isOpen && (
@@ -45,7 +45,7 @@ const Menu = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 bg-white border-b border-b-white/20"
+              className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 bg-white border-b border-b-white/20 z-40"
             >
               <ul className="grid gap-2">
                 {routes.map((route, idx) => {

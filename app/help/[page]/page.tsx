@@ -5,8 +5,8 @@ import HelpContent from "../../components/HelpContent";
 import { HelpPageType } from "../../lib/types";
 
 export const metadata: Metadata = {
-  title: "Чердак в кармане",
-  description: "Найти любой шмурдяк",
+  title: "Chrdk in your pocket",
+  description: "Find any item",
 };
 
 const HelpPage = async ({ params }: { params: { page: HelpPageType } }) => {
