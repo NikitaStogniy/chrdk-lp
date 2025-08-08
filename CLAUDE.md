@@ -67,4 +67,4 @@ The project uses Next.js App Router with the following structure:
 
 ### Internationalization Note
 
-The application is in Russian language. All content, routes, and metadata use Russian text. The main brand name "chrk." is used consistently throughout.
+The application is in Russian language. All content, routes, and metadata use Russian text. The main brand name "chrdk." is used consistently throughout.

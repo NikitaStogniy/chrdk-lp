@@ -23,7 +23,7 @@ const Menu = () => {
       <div className="justify-start flex-row items-start max-w-[1450px] mx-auto relative">
         <div className="hidden lg:flex justify-start flex-row items-start max-w-[1450px] mx-auto p-4 md:p-8 gap-8 absolute z-50 top-0 left-0 right-0">
           <Link href={"/"} className="font-bold">
-            chrk.
+            chrdk.
           </Link>
           <div className="flex flex-row gap-4">
             {routes.slice(1).map((route, idx) => {
